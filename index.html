@@ -5,11 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
-    <title>Portifólio-1 ( branch develoop )</title>
+    <script src="menu.js" defer></script>
+
+        <title>Portifólio-1 ( branch develoop )</title>
 </head>
 
 <body>
-    <header>
+    <header id="inicio">
         <div class="interface">
             <div class="logo">
                 <a class="logo01" href="#">CLM
@@ -19,19 +21,40 @@
 
             <nav class="menu-desktop">
                 <ul>
-                    <li><a href="#">Início</a></li>
-                    <li><a href="#">Especialidades</a></li>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Projetos</a></li>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#especialidades">Especialidades</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
                 </ul>
             </nav>
 
-            <div class="btn-contato">
-                <a href="#">
+            <div class="btn-contato" >
+                <a href="https://api.whatsapp.com/send?phone=5511948015216" target="_blank">
                     <button>Contato</button>
                 </a>
-
             </div> <!--btn-contato-->
+
+            <div class="btn-abrir-menu" id="btn-menu">
+                <i class="bi bi-list"></i>
+            </div>
+
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="btn-fechar">
+                    <i class="bi bi-x-lg"></i>
+                </div>
+
+                <nav>
+                    <ul>
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="#especialidades">Especialidades</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#projetos">Projetos</a></li>
+                        <li><a href="https://api.whatsapp.com/send?phone=5511948015216" target="_blank">Contato</a></li>
+                    </ul>
+                </nav>
+
+            </div><!--menu-mobile-->
+            <div class="overlay-menu" id="overlay-menu"></div>
         </div><!--interface-->
     </header>
 
@@ -47,7 +70,7 @@
                         </p>
 
                         <div class="btn-contato">
-                            <a href="#">
+                            <a href="https://api.whatsapp.com/send?phone=5511948015216" target="_blank">
                                 <button>Entre em contato</button>
                             </a>
                         </div>
@@ -61,7 +84,7 @@
             </div>
         </section> <!--topo-do-site-->
 
-        <section class="especialidades">
+        <section class="especialidades," id="especialidades">
             <div class="interface">
                 <h2 class="titulo">MINHAS <span>ESPECIALIDADES.</span></h2>
                 <div class="flex">
@@ -93,7 +116,7 @@
             </div><!--interface-->
         </section><!--especialidades-->
 
-        <section class="sobre">
+        <section class="sobre" id="sobre">
             <div class="interface">
                 <div class="flex">
                     <div class="img-sobre">
@@ -116,21 +139,17 @@
                             esse sint eligendi veniam ex?</p>
 
                         <div class="btn-social">
-                            <a href="#"><button><i class="bi bi-instagram"></i></button></a>
-                            <a href="#"><button><i class="bi bi-youtube"></i></button></a>
-                            <a href="#"><button><i class="bi bi-linkedin"></i></button></a>
+                            <a href="https://www.instagram.com/cassio.2390/" target="_blank"><button><i class="bi bi-instagram"></i></button></a>
+                            <a href="https://github.com/DevCassio23" target="_blank"><button><i class="bi bi-github"></i></button></a>
+                            <a href="https://www.linkedin.com/in/cassio-lima-dos-santos-726797211/" target="_blank"><button><i class="bi bi-linkedin"></i></button></a>
                         </div>
                     </div>
 
-
-
-
                 </div><!--interface-->
-
 
         </section>
 
-        <section class="portfolio">
+        <section class="portfolio" id="projetos">
             <div class="interface">
                 <h2 class="titulo">MEU <span>PORTFÓLIO.</span></h2>
                 <div class="flex">
@@ -153,7 +172,7 @@
 
                 <form action="">
                     <input type="text" name="" id="" placeholder="Seu nome completo:" required>
-                    <input type="text" name="" id="" placeholder="Seu e-mail:" required> 
+                    <input type="text" name="" id="" placeholder="Seu e-mail:" required>
                     <input type="text" name="" id="" placeholder="Seu celular:">
                     <textarea name="" id="" placeholder="Sua mensagem" required></textarea>
                     <div class="btn-enviar"><input type="submit" value="ENVIAR"></div>
@@ -163,6 +182,29 @@
 
     </main>
 
-</body>
+    <footer>
+        <div class="interface">
+            <div class="line-footer">
+                <div class="flex">
+                    <div class="logo-footer">
+                        <a class="logo02" href="#">CLM</a>
+                    </div><!--logo-footer-->
+                    <div class="btn-social">
+                        <a href="https://www.instagram.com/cassio.2390/" target="_blank"><button><i
+                                    class="bi bi-instagram"></i></button></a>
+                        <a href="https://github.com/DevCassio23" target="_blank"><button><i
+                                    class="bi bi-github"></i></button></a>
+                        <a href="https://www.linkedin.com/in/cassio-lima-dos-santos-726797211/"
+                            target="_blank"><button><i class="bi bi-linkedin"></i></button></a>
+                    </div><!--btn-social-->
+                </div><!--flex-->
+            </div><!--line-footer-->
+
+            <div class="line-footer borda">
+                <p><i class="bi bi-envelope-fill"></i> <a
+                        href="mailto:cassio.lima007@gmail.com">cassio.lima007@gmail.com</a></p>
+            </div><!--line-footer-->
+        </div><!--interface-->
+    </footer>
 
 </html>

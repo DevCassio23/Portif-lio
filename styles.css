@@ -89,6 +89,7 @@ header nav ul {
     list-style-type: none;
 }
 
+
 header nav.menu-desktop ul li {
     display: inline-block;
     padding: 0 40px;
@@ -227,6 +228,7 @@ img {
 section.especialidades {
     padding: 40px 4%;
     margin-top: 22px;
+    color: #fff;
 }
 
 section.especialidades .flex {
@@ -234,12 +236,13 @@ section.especialidades .flex {
 }
 
 .especialidades .especialidades-box {
-    color: #fff;
+    
     padding: 40px;
-    border-radius: 25px;
+    border-radius: 20px;
     margin-top: 45px;
     transition: .2s;
-
+    color: #fff;
+    
 }
 
 .especialidades .especialidades-box:hover {
@@ -427,6 +430,10 @@ footer {
 
 }
 
+footer .flex{
+    justify-content: space-between;
+}
+
 footer .line-footer {
     padding: 20px 0;
 }
@@ -452,6 +459,10 @@ footer .line-footer p a {
     display: flex;
     gap: 20px;
 }
+
+
+
+
 
 
 @media screen and (max-width:1350px) {
@@ -559,5 +570,7 @@ footer .line-footer p a {
     .btn-abrir-menu {
         margin-bottom: 95px;
     }
+
+    
 }
 

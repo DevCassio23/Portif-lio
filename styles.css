@@ -116,7 +116,8 @@ header nav.menu-desktop ul li {
 }
 
 .menu-mobile.abrir-menu{
-    width: 20%;
+    position: absolute;
+    width: 55%;
 }
 
 .menu-mobile.abrir-menu ~ .overlay-menu{
@@ -490,6 +491,11 @@ footer .line-footer p a {
     .btn-contato {
         display: none;
     }
+
+    .menu-mobile{
+        width: 0%;
+    }
+
 
     /* TOPO DO SITE */
 

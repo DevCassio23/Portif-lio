@@ -117,7 +117,7 @@ header nav.menu-desktop ul li {
 
 .menu-mobile.abrir-menu{
     position: absolute;
-    width: 55%;
+    width: 90%;
 }
 
 .menu-mobile.abrir-menu ~ .overlay-menu{
@@ -135,6 +135,8 @@ header nav.menu-desktop ul li {
 
 .menu-mobile nav ul {
     text-align: right;
+    position: relative;
+    left: -70px;
 
 }
 
